@@ -37,6 +37,7 @@
 /* End PBXAggregateTarget section */
 
 /* Begin PBXBuildFile section */
+		50676AA816E8527600ADF70E /* MFCore.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D4FC0C980CF128480029B133 /* MFCore.framework */; settings = {ATTRIBUTES = (Required, ); }; };
 		D40235AE0D7E0176000B9B64 /* Carbon.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D40235AD0D7E0176000B9B64 /* Carbon.framework */; };
 		D402372E0D7E029E000B9B64 /* Carbon.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D40235AD0D7E0176000B9B64 /* Carbon.framework */; };
 		D403632F0E0780BF0048BB63 /* MFEditingController.h in Headers */ = {isa = PBXBuildFile; fileRef = D403632D0E0780BF0048BB63 /* MFEditingController.h */; };
@@ -66,7 +67,6 @@
 		D41E1DBC0D8757A500F46F50 /* MacfusionMenuling.app in Copy App Resources */ = {isa = PBXBuildFile; fileRef = D48DB97F0D70D7A4008A62BB /* MacfusionMenuling.app */; };
 		D41E1DFE0D87580F00F46F50 /* mfctl in Copy App Resources */ = {isa = PBXBuildFile; fileRef = D4B14E730CE198AC003195A3 /* mfctl */; };
 		D41E20E60D88711B00F46F50 /* MFCore.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D4FC0C980CF128480029B133 /* MFCore.framework */; };
-		D41E21090D88723900F46F50 /* MFCore.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D4FC0C980CF128480029B133 /* MFCore.framework */; };
 		D41E23990D88E7B100F46F50 /* macfusionAdvancedView.xib in Resources */ = {isa = PBXBuildFile; fileRef = D41E23980D88E7B100F46F50 /* macfusionAdvancedView.xib */; };
 		D41E24260D897D5700F46F50 /* MFPreferences.xib in Resources */ = {isa = PBXBuildFile; fileRef = D41E24250D897D5600F46F50 /* MFPreferences.xib */; };
 		D41E242A0D897F0C00F46F50 /* MFPreferencesController.h in Headers */ = {isa = PBXBuildFile; fileRef = D41E24280D897F0B00F46F50 /* MFPreferencesController.h */; };
@@ -182,6 +182,13 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
+		50676AA616E8518D00ADF70E /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 08FB7793FE84155DC02AAC07 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = D4EA614F0D8B30DA006D8885;
+			remoteInfo = macfusionAgent;
+		};
 		D4071EBD0D8B444A000A1D66 /* PBXContainerItemProxy */ = {
 			isa = PBXContainerItemProxy;
 			containerPortal = 08FB7793FE84155DC02AAC07 /* Project object */;
@@ -537,7 +544,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				D41E21090D88723900F46F50 /* MFCore.framework in Frameworks */,
+				50676AA816E8527600ADF70E /* MFCore.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -1121,8 +1128,9 @@
 			buildRules = (
 			);
 			dependencies = (
-				D41E17DD0D86040000F46F50 /* PBXTargetDependency */,
 				D4D6A11F0D03548100BC2E2D /* PBXTargetDependency */,
+				50676AA716E8518D00ADF70E /* PBXTargetDependency */,
+				D41E17DD0D86040000F46F50 /* PBXTargetDependency */,
 			);
 			name = sshfs;
 			productName = SSHFS;
@@ -1246,11 +1254,11 @@
 			projectRoot = "";
 			targets = (
 				D42E15540CE03A8200C81814 /* MFCore */,
+				D4EA614F0D8B30DA006D8885 /* macfusionAgent */,
 				D4E6DB000D9392840022763F /* ftpfs_askpass */,
 				D4E6D8080D9372640022763F /* ftpfs */,
 				D4B14BB50CE03CC3003195A3 /* sshfs */,
 				D41E17D30D8603DC00F46F50 /* new_sshfs_askpass */,
-				D4EA614F0D8B30DA006D8885 /* macfusionAgent */,
 				D4B14D6B0CE19545003195A3 /* mfctl */,
 				D48DB97E0D70D7A4008A62BB /* MacfusionMenuling */,
 				D4DB42030D3E863100C99914 /* MacfusionMain */,
@@ -1487,6 +1495,11 @@
 /* End PBXSourcesBuildPhase section */
 
 /* Begin PBXTargetDependency section */
+		50676AA716E8518D00ADF70E /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = D4EA614F0D8B30DA006D8885 /* macfusionAgent */;
+			targetProxy = 50676AA616E8518D00ADF70E /* PBXContainerItemProxy */;
+		};
 		D4071EBE0D8B444A000A1D66 /* PBXTargetDependency */ = {
 			isa = PBXTargetDependency;
 			target = D4EA614F0D8B30DA006D8885 /* macfusionAgent */;
@@ -1584,10 +1597,12 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ARCHS = "$(ARCHS_STANDARD_32_64_BIT)";
+				CODE_SIGN_IDENTITY = "";
 				GCC_VERSION = com.apple.compilers.llvm.clang.1_0;
 				GCC_WARN_ABOUT_RETURN_TYPE = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				SDKROOT = "";
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = macosx10.7;
 			};
 			name = Release;
 		};
@@ -1688,11 +1703,12 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ARCHS = "$(ARCHS_STANDARD_32_64_BIT)";
+				CODE_SIGN_IDENTITY = "";
 				GCC_VERSION = com.apple.compilers.llvm.clang.1_0;
 				GCC_WARN_ABOUT_RETURN_TYPE = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				ONLY_ACTIVE_ARCH = NO;
-				SDKROOT = "";
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = macosx10.7;
 			};
 			name = "Release-Signed";
 		};
@@ -1941,11 +1957,12 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ARCHS = "$(ARCHS_STANDARD_32_64_BIT)";
+				CODE_SIGN_IDENTITY = "";
 				GCC_VERSION = com.apple.compilers.llvm.clang.1_0;
 				GCC_WARN_ABOUT_RETURN_TYPE = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
 				ONLY_ACTIVE_ARCH = YES;
-				SDKROOT = "";
+				SDKROOT = macosx10.7;
 			};
 			name = "Debug-Signed";
 		};
@@ -2502,11 +2519,12 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ARCHS = "$(ARCHS_STANDARD_32_64_BIT)";
+				CODE_SIGN_IDENTITY = "";
 				GCC_VERSION = com.apple.compilers.llvm.clang.1_0;
 				GCC_WARN_ABOUT_RETURN_TYPE = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
 				ONLY_ACTIVE_ARCH = YES;
-				SDKROOT = "";
+				SDKROOT = macosx10.7;
 			};
 			name = Debug;
 		};

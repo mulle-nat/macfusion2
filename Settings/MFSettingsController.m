@@ -29,6 +29,7 @@
 #import "MFEditingController.h"
 #import "MFPreferences.h"
 #import "MFLogging.h"
+#import "MGActionButton.h"
 
 @interface MFSettingsController(PrivateAPI)
 - (void)editFilesystem:(MFClientFS*)fs;
@@ -145,7 +146,7 @@
 	[tableViewMenu addItemWithTitle:@"Unmount" action:@selector(unmount) keyEquivalent:@""];
 	[tableViewMenu addItemWithTitle:@"Edit" action:@selector(editSelectedFilesystem:) keyEquivalent:@""];
 	
-	[[MFPreferences sharedPreferences] addObserver:self forKeyPath:kMFPrefsAutosize options:0 context:self];
+	[[MFPreferences sharedPreferences] addObserver:self forKeyPath:kMFPrefsAutosize options:0 context:(__bridge void *)(self)];
 	[filesystemTableView setIntercellSpacing: NSMakeSize(10, 0)];
 	
 	NSWindow *window = [filesystemTableView window];
@@ -204,7 +205,7 @@
 	[[client.filesystems filteredArrayUsingPredicate:[NSPredicate predicateWithFormat:@"self.status == %@", kMFStatusFSMounted]] 
 	 makeObjectsPerformSelector:@selector(setClientFSDelegate:) withObject:self];
 	
-	[filesystemArrayController addObserver:self forKeyPath:@"arrangedObjects" options:NSKeyValueObservingOptionNew context:self];
+	[filesystemArrayController addObserver:self forKeyPath:@"arrangedObjects" options:NSKeyValueObservingOptionNew context:(__bridge void *)(self)];
 	[self resizeWindowForContent];
 	[newFSActionButton setMenu:[self newFilesystemMenu]];
 }
@@ -295,6 +296,7 @@
 	}
 
 	if ([filesystemsToDelete count] > 0) {
+        NSLog(@"%d",[filesystemsToDelete count]);
 		NSString *fsWord = [filesystemsToDelete count] == 1 ? @"filesystem" : @"filesystems";
 		NSString *messageText = [NSString stringWithFormat: @"Are you sure you want to delete the %@ %@?", fsWord,
 								 [[filesystemsToDelete valueForKey: kMFFSNameParameter] componentsJoinedByString: @", "]];
@@ -308,7 +310,7 @@
 		[deleteConfirmation beginSheetModalForWindow: [filesystemTableView window]
 									   modalDelegate:self
 									  didEndSelector:@selector(deleteConfirmationAlertDidEnd:returnCode:contextInfo:)
-										 contextInfo:filesystemsToDelete];
+										 contextInfo:CFBridgingRetain(filesystemsToDelete)];
 	}
 }
 
@@ -366,9 +368,9 @@
 
 
 - (void)deleteConfirmationAlertDidEnd:(NSAlert*)alert returnCode:(NSInteger)code contextInfo:(void *)context {
-	NSArray *filesystemsToDelete = (NSArray *)context;
+	NSArray *filesystemsToDelete = (__bridge NSArray *)context;
+    NSLog(@"%d",[filesystemsToDelete count]);
 	if (code == NSAlertSecondButtonReturn) {
-		
 	} else if (code == NSAlertFirstButtonReturn) {
 		for(MFClientFS *fs in filesystemsToDelete) {
 			[client deleteFilesystem: fs];	
@@ -394,7 +396,7 @@
 }
 
 - (void) observeValueForKeyPath:(NSString *)keyPath ofObject:(id)object change:(NSDictionary *)change context:(void *)context {
-    if (context == self) {
+    if (context == (__bridge void *)(self)) {
 		[self resizeWindowForContent];
 	} else {
 		[super observeValueForKeyPath:keyPath ofObject:object change:change context:context];
@@ -578,8 +580,7 @@
 	mfcKaboomMacfusion();
 }
 
-- (void)finalize {
-	[super finalize];
+- (void)dealloc {
 	[client setDelegate:nil];
 }
 
