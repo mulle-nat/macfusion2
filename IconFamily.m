@@ -23,6 +23,7 @@
 
 #import "IconFamily.h"
 #import "NSString+CarbonFSRefCreation.h"
+#import <CoreGraphics/CoreGraphics.h>
 
 #if MAC_OS_X_VERSION_MAX_ALLOWED <= MAC_OS_X_VERSION_10_4
 // This is defined in 10.5 and beyond in IconStorage.h

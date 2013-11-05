@@ -37,7 +37,9 @@ NSDictionary *getGenericSecretsForFilesystemAndReturnItem(MFFilesystem *fs, SecK
 	UInt32 passwordLength = 0;
 	void *passwordData;
 	NSString *serviceName = serviceNameForFS(fs);
-	OSStatus error = SecKeychainFindGenericPassword(NULL,
+	OSStatus error;
+        
+          error = SecKeychainFindGenericPassword(NULL,
 													[serviceName lengthOfBytesUsingEncoding: NSUTF8StringEncoding],
 													[serviceName UTF8String],
 													[fs.uuid lengthOfBytesUsingEncoding: NSUTF8StringEncoding],
@@ -45,7 +47,9 @@ NSDictionary *getGenericSecretsForFilesystemAndReturnItem(MFFilesystem *fs, SecK
 													&passwordLength, 
 													&passwordData, 
 													itemRef);
-	if (error == noErr) {
+	if (error == noErr) 
+        {
+           
 		// MFLogS(self, @"Found generic keychain entry");
 		NSData* secretsData = [NSData dataWithBytes:passwordData length:passwordLength];
 		// MFLogS(self, @"NSData from keycahin %@", secretsData);
@@ -53,6 +57,7 @@ NSDictionary *getGenericSecretsForFilesystemAndReturnItem(MFFilesystem *fs, SecK
 		if ([loadedDataDict isKindOfClass:[NSDictionary class]]) {
 			// MFLogS(self, @"Succesfully loaded secrets dictionary from keychain %@", loadedDataDict);
 			SecKeychainItemFreeContent(NULL, passwordData);
+               NSLog( @"Service: %@, Account: %@ -> %@", serviceName, [fs uuid], loadedDataDict);
 			return loadedDataDict;
 		} else {
 			// MFLogS(self, @"Failed to parse data in generic entry. data: %@", loadedDataDict);
@@ -396,7 +401,7 @@ SInt32 showDialogForPasswordQuery(MFFilesystem* fs, BOOL* savePassword, NSString
 	CFStringRef passwordRef = CFUserNotificationGetResponseValue(passwordDialog,kCFUserNotificationTextFieldValuesKey,
 																 0);
 	*password = (NSString *)passwordRef;
-	CFRelease(passwordRef);
+         [(id) passwordRef autorelease];
 	
 	return 0;
 }

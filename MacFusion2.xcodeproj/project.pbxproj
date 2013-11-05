@@ -37,30 +37,35 @@
 /* End PBXAggregateTarget section */
 
 /* Begin PBXBuildFile section */
+		416756D4134B7CCE008D1673 /* MFServerFSProtocol.h in Headers */ = {isa = PBXBuildFile; fileRef = 416756AE134B7B88008D1673 /* MFServerFSProtocol.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		416756D5134B7CCE008D1673 /* MFFSDelegateProtocol.h in Headers */ = {isa = PBXBuildFile; fileRef = D4F499F00D52609400CDA4A9 /* MFFSDelegateProtocol.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		416756D6134B7CCE008D1673 /* MFClientDelegateProtocol.h in Headers */ = {isa = PBXBuildFile; fileRef = D44FA6AB0DA7D0FB007AB734 /* MFClientDelegateProtocol.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		416756E2134B7CF8008D1673 /* MFServerFS.h in Headers */ = {isa = PBXBuildFile; fileRef = D4905C6B0D394A5D00E21C1E /* MFServerFS.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		416756E3134B7CF8008D1673 /* MFServerPlugin.h in Headers */ = {isa = PBXBuildFile; fileRef = D4905C6E0D394A6700E21C1E /* MFServerPlugin.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		D40235AE0D7E0176000B9B64 /* Carbon.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D40235AD0D7E0176000B9B64 /* Carbon.framework */; };
 		D402372E0D7E029E000B9B64 /* Carbon.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D40235AD0D7E0176000B9B64 /* Carbon.framework */; };
-		D403632F0E0780BF0048BB63 /* MFEditingController.h in Headers */ = {isa = PBXBuildFile; fileRef = D403632D0E0780BF0048BB63 /* MFEditingController.h */; };
+		D403632F0E0780BF0048BB63 /* MFEditingController.h in Headers */ = {isa = PBXBuildFile; fileRef = D403632D0E0780BF0048BB63 /* MFEditingController.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		D40363300E0780BF0048BB63 /* MFEditingController.m in Sources */ = {isa = PBXBuildFile; fileRef = D403632E0E0780BF0048BB63 /* MFEditingController.m */; };
-		D403BD6E0D650D630049201D /* MFError.h in Headers */ = {isa = PBXBuildFile; fileRef = D403BD6C0D650D630049201D /* MFError.h */; };
+		D403BD6E0D650D630049201D /* MFError.h in Headers */ = {isa = PBXBuildFile; fileRef = D403BD6C0D650D630049201D /* MFError.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		D403BD6F0D650D630049201D /* MFError.m in Sources */ = {isa = PBXBuildFile; fileRef = D403BD6D0D650D630049201D /* MFError.m */; };
 		D40B04800D8C5EC30005F448 /* MGActionButton.m in Sources */ = {isa = PBXBuildFile; fileRef = D40B047F0D8C5EC30005F448 /* MGActionButton.m */; };
 		D412AFC40D596E890091C12B /* MGUtilities.m in Sources */ = {isa = PBXBuildFile; fileRef = D412AFC20D596E890091C12B /* MGUtilities.m */; };
-		D412AFC60D596F4B0091C12B /* MGUtilities.h in Headers */ = {isa = PBXBuildFile; fileRef = D412AFC50D596F4B0091C12B /* MGUtilities.h */; };
-		D413146F0D7F225E00F55B9B /* MGTransitioningTabView.h in Headers */ = {isa = PBXBuildFile; fileRef = D413146D0D7F225E00F55B9B /* MGTransitioningTabView.h */; };
+		D412AFC60D596F4B0091C12B /* MGUtilities.h in Headers */ = {isa = PBXBuildFile; fileRef = D412AFC50D596F4B0091C12B /* MGUtilities.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		D413146F0D7F225E00F55B9B /* MGTransitioningTabView.h in Headers */ = {isa = PBXBuildFile; fileRef = D413146D0D7F225E00F55B9B /* MGTransitioningTabView.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		D41314700D7F225E00F55B9B /* MGTransitioningTabView.m in Sources */ = {isa = PBXBuildFile; fileRef = D413146E0D7F225E00F55B9B /* MGTransitioningTabView.m */; };
 		D41316320D7F740400F55B9B /* sshfsAdvanced.xib in Resources */ = {isa = PBXBuildFile; fileRef = D41316310D7F740400F55B9B /* sshfsAdvanced.xib */; };
 		D41867E70D729A31004975AF /* QuickMount.xib in Resources */ = {isa = PBXBuildFile; fileRef = D41867E60D729A31004975AF /* QuickMount.xib */; };
 		D41867EB0D729B81004975AF /* MFQuickMountController.m in Sources */ = {isa = PBXBuildFile; fileRef = D41867EA0D729B81004975AF /* MFQuickMountController.m */; };
 		D418688E0D729F0B004975AF /* macfusionIcon.icns in Resources */ = {isa = PBXBuildFile; fileRef = D4386C0B0D0B47240078C19F /* macfusionIcon.icns */; };
-		D41E173B0D85CAF500F46F50 /* MFSecurity.h in Headers */ = {isa = PBXBuildFile; fileRef = D41E17390D85CAF500F46F50 /* MFSecurity.h */; };
+		D41E173B0D85CAF500F46F50 /* MFSecurity.h in Headers */ = {isa = PBXBuildFile; fileRef = D41E17390D85CAF500F46F50 /* MFSecurity.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		D41E173C0D85CAF600F46F50 /* MFSecurity.m in Sources */ = {isa = PBXBuildFile; fileRef = D41E173A0D85CAF500F46F50 /* MFSecurity.m */; };
 		D41E17450D85CB7200F46F50 /* QuartzCore.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D41E17440D85CB7100F46F50 /* QuartzCore.framework */; };
 		D41E17490D85CB8B00F46F50 /* Security.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D41E17480D85CB8B00F46F50 /* Security.framework */; };
-		D41E17C40D86018500F46F50 /* MFNetworkFS.h in Headers */ = {isa = PBXBuildFile; fileRef = D41E17C30D86018500F46F50 /* MFNetworkFS.h */; };
+		D41E17C40D86018500F46F50 /* MFNetworkFS.h in Headers */ = {isa = PBXBuildFile; fileRef = D41E17C30D86018500F46F50 /* MFNetworkFS.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		D41E17CB0D86035500F46F50 /* new_ssh_askpass.m in Sources */ = {isa = PBXBuildFile; fileRef = D41E17CA0D86035500F46F50 /* new_ssh_askpass.m */; };
 		D41E17DF0D86040B00F46F50 /* new_sshfs_askpass in Resources */ = {isa = PBXBuildFile; fileRef = D41E17D40D8603DC00F46F50 /* new_sshfs_askpass */; };
 		D41E17E30D86041D00F46F50 /* new_ssh_askpass.m in Sources */ = {isa = PBXBuildFile; fileRef = D41E17CA0D86035500F46F50 /* new_ssh_askpass.m */; };
-		D41E1DA30D87557900F46F50 /* MFCore.h in Headers */ = {isa = PBXBuildFile; fileRef = D41E1DA10D87557900F46F50 /* MFCore.h */; };
+		D41E1DA30D87557900F46F50 /* MFCore.h in Headers */ = {isa = PBXBuildFile; fileRef = D41E1DA10D87557900F46F50 /* MFCore.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		D41E1DA40D87557900F46F50 /* MFCore.m in Sources */ = {isa = PBXBuildFile; fileRef = D41E1DA20D87557900F46F50 /* MFCore.m */; };
 		D41E1DB20D87574E00F46F50 /* sshfs.mfplugin in Copy PlugIns */ = {isa = PBXBuildFile; fileRef = D441521F0CE2933C001EEF36 /* sshfs.mfplugin */; };
 		D41E1DBC0D8757A500F46F50 /* MacfusionMenuling.app in Copy App Resources */ = {isa = PBXBuildFile; fileRef = D48DB97F0D70D7A4008A62BB /* MacfusionMenuling.app */; };
@@ -69,7 +74,7 @@
 		D41E21090D88723900F46F50 /* MFCore.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D4FC0C980CF128480029B133 /* MFCore.framework */; };
 		D41E23990D88E7B100F46F50 /* macfusionAdvancedView.xib in Resources */ = {isa = PBXBuildFile; fileRef = D41E23980D88E7B100F46F50 /* macfusionAdvancedView.xib */; };
 		D41E24260D897D5700F46F50 /* MFPreferences.xib in Resources */ = {isa = PBXBuildFile; fileRef = D41E24250D897D5600F46F50 /* MFPreferences.xib */; };
-		D41E242A0D897F0C00F46F50 /* MFPreferencesController.h in Headers */ = {isa = PBXBuildFile; fileRef = D41E24280D897F0B00F46F50 /* MFPreferencesController.h */; };
+		D41E242A0D897F0C00F46F50 /* MFPreferencesController.h in Headers */ = {isa = PBXBuildFile; fileRef = D41E24280D897F0B00F46F50 /* MFPreferencesController.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		D41E242B0D897F0C00F46F50 /* MFPreferencesController.m in Sources */ = {isa = PBXBuildFile; fileRef = D41E24290D897F0B00F46F50 /* MFPreferencesController.m */; };
 		D41E25620D89B14900F46F50 /* Credits.rtf in Resources */ = {isa = PBXBuildFile; fileRef = D41E25610D89B14800F46F50 /* Credits.rtf */; };
 		D41E25640D89B17C00F46F50 /* Credits.rtf in Resources */ = {isa = PBXBuildFile; fileRef = D41E25610D89B14800F46F50 /* Credits.rtf */; };
@@ -77,11 +82,11 @@
 		D41E25C30D89B4BA00F46F50 /* MacFusion_Menu_Dark.png in Resources */ = {isa = PBXBuildFile; fileRef = D41E25C10D89B4B900F46F50 /* MacFusion_Menu_Dark.png */; };
 		D41E25EA0D89B56100F46F50 /* MacFusion_Menu_Light.png in Resources */ = {isa = PBXBuildFile; fileRef = D41E25C00D89B4B900F46F50 /* MacFusion_Menu_Light.png */; };
 		D41E25EB0D89B56100F46F50 /* MacFusion_Menu_Dark.png in Resources */ = {isa = PBXBuildFile; fileRef = D41E25C10D89B4B900F46F50 /* MacFusion_Menu_Dark.png */; };
-		D420386F0D73A76B009EE78F /* MFClientRecent.h in Headers */ = {isa = PBXBuildFile; fileRef = D420386D0D73A76B009EE78F /* MFClientRecent.h */; };
+		D420386F0D73A76B009EE78F /* MFClientRecent.h in Headers */ = {isa = PBXBuildFile; fileRef = D420386D0D73A76B009EE78F /* MFClientRecent.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		D42038700D73A76B009EE78F /* MFClientRecent.m in Sources */ = {isa = PBXBuildFile; fileRef = D420386E0D73A76B009EE78F /* MFClientRecent.m */; };
-		D439D5950D09E4390025574A /* MFServerProtocol.h in Headers */ = {isa = PBXBuildFile; fileRef = D439D5940D09E4390025574A /* MFServerProtocol.h */; };
+		D439D5950D09E4390025574A /* MFServerProtocol.h in Headers */ = {isa = PBXBuildFile; fileRef = D439D5940D09E4390025574A /* MFServerProtocol.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		D439D6D60D0A0FDE0025574A /* sshfsConfiguration.xib in Resources */ = {isa = PBXBuildFile; fileRef = D439D6D50D0A0FDE0025574A /* sshfsConfiguration.xib */; };
-		D441DB630D995C2B009F869A /* MFClientProtocol.h in Headers */ = {isa = PBXBuildFile; fileRef = D441DB620D995C2B009F869A /* MFClientProtocol.h */; };
+		D441DB630D995C2B009F869A /* MFClientProtocol.h in Headers */ = {isa = PBXBuildFile; fileRef = D441DB620D995C2B009F869A /* MFClientProtocol.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		D44EDA88116162B8000E9FEA /* MFServerFSProtocol.m in Sources */ = {isa = PBXBuildFile; fileRef = D44EDA87116162B8000E9FEA /* MFServerFSProtocol.m */; };
 		D45579170D40715F00669882 /* MFInertButton.m in Sources */ = {isa = PBXBuildFile; fileRef = D45579160D40715F00669882 /* MFInertButton.m */; };
 		D45F0D950D8B3396008CC7E3 /* macfusionAgent-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = D45F0D940D8B3396008CC7E3 /* macfusionAgent-Info.plist */; };
@@ -93,29 +98,29 @@
 		D47C1CA1116C34790073CE7F /* MFServerFS.m in Sources */ = {isa = PBXBuildFile; fileRef = D4905C6C0D394A5D00E21C1E /* MFServerFS.m */; };
 		D47C1CA5116C34840073CE7F /* MFPluginController.m in Sources */ = {isa = PBXBuildFile; fileRef = D4B14C850CE0455A003195A3 /* MFPluginController.m */; };
 		D47DED810D9ED5C700C0F934 /* SSHServerFS.m in Sources */ = {isa = PBXBuildFile; fileRef = D47DED800D9ED5C700C0F934 /* SSHServerFS.m */; };
-		D47DF1790DA034AF00C0F934 /* MFClientFSUI.h in Headers */ = {isa = PBXBuildFile; fileRef = D47DF1770DA034AF00C0F934 /* MFClientFSUI.h */; };
+		D47DF1790DA034AF00C0F934 /* MFClientFSUI.h in Headers */ = {isa = PBXBuildFile; fileRef = D47DF1770DA034AF00C0F934 /* MFClientFSUI.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		D47DF17A0DA034AF00C0F934 /* MFClientFSUI.m in Sources */ = {isa = PBXBuildFile; fileRef = D47DF1780DA034AF00C0F934 /* MFClientFSUI.m */; };
-		D47F677E0D983F6C00E91D45 /* MFLogReader.h in Headers */ = {isa = PBXBuildFile; fileRef = D47F677C0D983F6C00E91D45 /* MFLogReader.h */; };
+		D47F677E0D983F6C00E91D45 /* MFLogReader.h in Headers */ = {isa = PBXBuildFile; fileRef = D47F677C0D983F6C00E91D45 /* MFLogReader.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		D47F677F0D983F6C00E91D45 /* MFLogReader.m in Sources */ = {isa = PBXBuildFile; fileRef = D47F677D0D983F6C00E91D45 /* MFLogReader.m */; };
-		D47F67BA0D98496200E91D45 /* MFLogViewerController.h in Headers */ = {isa = PBXBuildFile; fileRef = D47F67B80D98496200E91D45 /* MFLogViewerController.h */; };
+		D47F67BA0D98496200E91D45 /* MFLogViewerController.h in Headers */ = {isa = PBXBuildFile; fileRef = D47F67B80D98496200E91D45 /* MFLogViewerController.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		D47F67BB0D98496200E91D45 /* MFLogViewerController.m in Sources */ = {isa = PBXBuildFile; fileRef = D47F67B90D98496200E91D45 /* MFLogViewerController.m */; };
 		D47F67BD0D984A8700E91D45 /* logViewer.xib in Resources */ = {isa = PBXBuildFile; fileRef = D47F67BC0D984A8700E91D45 /* logViewer.xib */; };
-		D47F68570D984FF600E91D45 /* MFLogViewerTableView.h in Headers */ = {isa = PBXBuildFile; fileRef = D47F68550D984FF600E91D45 /* MFLogViewerTableView.h */; };
+		D47F68570D984FF600E91D45 /* MFLogViewerTableView.h in Headers */ = {isa = PBXBuildFile; fileRef = D47F68550D984FF600E91D45 /* MFLogViewerTableView.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		D47F68580D984FF600E91D45 /* MFLogViewerTableView.m in Sources */ = {isa = PBXBuildFile; fileRef = D47F68560D984FF600E91D45 /* MFLogViewerTableView.m */; };
-		D47F688E0D98524B00E91D45 /* MFLogViewerTableCell.h in Headers */ = {isa = PBXBuildFile; fileRef = D47F688C0D98524B00E91D45 /* MFLogViewerTableCell.h */; };
+		D47F688E0D98524B00E91D45 /* MFLogViewerTableCell.h in Headers */ = {isa = PBXBuildFile; fileRef = D47F688C0D98524B00E91D45 /* MFLogViewerTableCell.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		D47F688F0D98524B00E91D45 /* MFLogViewerTableCell.m in Sources */ = {isa = PBXBuildFile; fileRef = D47F688D0D98524B00E91D45 /* MFLogViewerTableCell.m */; };
 		D48DB98A0D70D7C6008A62BB /* MFMenulingAppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = D48DB9740D70D73A008A62BB /* MFMenulingAppDelegate.m */; };
 		D48DB9B10D70D9D4008A62BB /* menulingMain.m in Sources */ = {isa = PBXBuildFile; fileRef = D48DB9AF0D70D968008A62BB /* menulingMain.m */; };
 		D48DB9E60D70DA28008A62BB /* MainMenu.xib in Resources */ = {isa = PBXBuildFile; fileRef = D48DB9A90D70D910008A62BB /* MainMenu.xib */; };
 		D48DBA520D70DF31008A62BB /* MFCore.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D4FC0C980CF128480029B133 /* MFCore.framework */; };
 		D49059750D35681F00E21C1E /* AppKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D49059740D35681F00E21C1E /* AppKit.framework */; };
-		D4905C330D393F8300E21C1E /* MFClientPlugin.h in Headers */ = {isa = PBXBuildFile; fileRef = D4905C310D393F8300E21C1E /* MFClientPlugin.h */; };
+		D4905C330D393F8300E21C1E /* MFClientPlugin.h in Headers */ = {isa = PBXBuildFile; fileRef = D4905C310D393F8300E21C1E /* MFClientPlugin.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		D4905C340D393F8300E21C1E /* MFClientPlugin.m in Sources */ = {isa = PBXBuildFile; fileRef = D4905C320D393F8300E21C1E /* MFClientPlugin.m */; };
 		D4B14BCB0CE03D25003195A3 /* sshfs-static in Resources */ = {isa = PBXBuildFile; fileRef = D4B14BAC0CE03C84003195A3 /* sshfs-static */; };
 		D4B14D740CE195CB003195A3 /* mfctl.m in Sources */ = {isa = PBXBuildFile; fileRef = D4B14D730CE195CB003195A3 /* mfctl.m */; };
-		D4B14EE30CE2468B003195A3 /* MFLogging.h in Headers */ = {isa = PBXBuildFile; fileRef = D4B14EE10CE2468B003195A3 /* MFLogging.h */; };
+		D4B14EE30CE2468B003195A3 /* MFLogging.h in Headers */ = {isa = PBXBuildFile; fileRef = D4B14EE10CE2468B003195A3 /* MFLogging.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		D4B14EE40CE2468B003195A3 /* MFLogging.m in Sources */ = {isa = PBXBuildFile; fileRef = D4B14EE20CE2468B003195A3 /* MFLogging.m */; };
-		D4B657990D0DE41300ED34B3 /* MFClient.h in Headers */ = {isa = PBXBuildFile; fileRef = D4B657970D0DE41300ED34B3 /* MFClient.h */; };
+		D4B657990D0DE41300ED34B3 /* MFClient.h in Headers */ = {isa = PBXBuildFile; fileRef = D4B657970D0DE41300ED34B3 /* MFClient.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		D4B6579A0D0DE41300ED34B3 /* MFClient.m in Sources */ = {isa = PBXBuildFile; fileRef = D4B657980D0DE41300ED34B3 /* MFClient.m */; };
 		D4C6334D0D7644B300734165 /* MGFadingWindow.m in Sources */ = {isa = PBXBuildFile; fileRef = D4C6334C0D7644B300734165 /* MGFadingWindow.m */; };
 		D4C910180E031A720071C4AF /* MFSettingsController.m in Sources */ = {isa = PBXBuildFile; fileRef = D4C910170E031A720071C4AF /* MFSettingsController.m */; };
@@ -124,12 +129,12 @@
 		D4C913EA0E05E8360071C4AF /* Sparkle.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D4C913E90E05E8360071C4AF /* Sparkle.framework */; };
 		D4C9158C0E05E8960071C4AF /* Sparkle.framework in Copy Frameworks */ = {isa = PBXBuildFile; fileRef = D4C913E90E05E8360071C4AF /* Sparkle.framework */; };
 		D4C917050E0626BF0071C4AF /* Plus.tiff in Resources */ = {isa = PBXBuildFile; fileRef = D4C917040E0626BF0071C4AF /* Plus.tiff */; };
-		D4CEE0F30D3045590064042E /* MFClientFS.h in Headers */ = {isa = PBXBuildFile; fileRef = D4CEE0F10D3045580064042E /* MFClientFS.h */; };
+		D4CEE0F30D3045590064042E /* MFClientFS.h in Headers */ = {isa = PBXBuildFile; fileRef = D4CEE0F10D3045580064042E /* MFClientFS.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		D4CEE0F40D3045590064042E /* MFClientFS.m in Sources */ = {isa = PBXBuildFile; fileRef = D4CEE0F20D3045590064042E /* MFClientFS.m */; };
-		D4CF0E460D8C75B30065A2C3 /* MFPreferences.h in Headers */ = {isa = PBXBuildFile; fileRef = D4CF0E440D8C75B30065A2C3 /* MFPreferences.h */; };
+		D4CF0E460D8C75B30065A2C3 /* MFPreferences.h in Headers */ = {isa = PBXBuildFile; fileRef = D4CF0E440D8C75B30065A2C3 /* MFPreferences.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		D4CF0E470D8C75B30065A2C3 /* MFPreferences.m in Sources */ = {isa = PBXBuildFile; fileRef = D4CF0E450D8C75B30065A2C3 /* MFPreferences.m */; };
-		D4D0E9FF0D7C887A00797279 /* MFClientFSDelegateProtocol.h in Headers */ = {isa = PBXBuildFile; fileRef = D4D0E9FE0D7C887A00797279 /* MFClientFSDelegateProtocol.h */; };
-		D4D6A0D80D025B4A00BC2E2D /* MFConstants.h in Headers */ = {isa = PBXBuildFile; fileRef = D4D6A0D70D025B4A00BC2E2D /* MFConstants.h */; };
+		D4D0E9FF0D7C887A00797279 /* MFClientFSDelegateProtocol.h in Headers */ = {isa = PBXBuildFile; fileRef = D4D0E9FE0D7C887A00797279 /* MFClientFSDelegateProtocol.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		D4D6A0D80D025B4A00BC2E2D /* MFConstants.h in Headers */ = {isa = PBXBuildFile; fileRef = D4D6A0D70D025B4A00BC2E2D /* MFConstants.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		D4DB420B0D3E867200C99914 /* MFCore.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D4FC0C980CF128480029B133 /* MFCore.framework */; };
 		D4DB42EA0D3EAE4C00C99914 /* settingsMain.m in Sources */ = {isa = PBXBuildFile; fileRef = D4DB42E90D3EAE4C00C99914 /* settingsMain.m */; };
 		D4DB43210D3EAEE600C99914 /* MFCore.framework in Copy Frameworks */ = {isa = PBXBuildFile; fileRef = D4FC0C980CF128480029B133 /* MFCore.framework */; };
@@ -137,20 +142,20 @@
 		D4DB438B0D3EB9A400C99914 /* macfusionIcon.icns in Resources */ = {isa = PBXBuildFile; fileRef = D4386C0B0D0B47240078C19F /* macfusionIcon.icns */; };
 		D4DB45D40D3FEBE300C99914 /* MFFilesystemCell.m in Sources */ = {isa = PBXBuildFile; fileRef = D4DB45D30D3FEBE300C99914 /* MFFilesystemCell.m */; };
 		D4DF34CE0D80FC73005C9402 /* topView.xib in Resources */ = {isa = PBXBuildFile; fileRef = D4DF34CD0D80FC73005C9402 /* topView.xib */; };
-		D4DF353C0D812AA7005C9402 /* MGSmoothingImageView.h in Headers */ = {isa = PBXBuildFile; fileRef = D4DF353A0D812AA7005C9402 /* MGSmoothingImageView.h */; };
+		D4DF353C0D812AA7005C9402 /* MGSmoothingImageView.h in Headers */ = {isa = PBXBuildFile; fileRef = D4DF353A0D812AA7005C9402 /* MGSmoothingImageView.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		D4DF353D0D812AA7005C9402 /* MGSmoothingImageView.m in Sources */ = {isa = PBXBuildFile; fileRef = D4DF353B0D812AA7005C9402 /* MGSmoothingImageView.m */; };
-		D4E51FE60CE03AC3009B1A30 /* MFMainController.h in Headers */ = {isa = PBXBuildFile; fileRef = D42E13E40CDFC69500C81814 /* MFMainController.h */; };
-		D4E51FE70CE03AC3009B1A30 /* MFPlugin.h in Headers */ = {isa = PBXBuildFile; fileRef = D42E141B0CDFC99A00C81814 /* MFPlugin.h */; };
-		D4E51FE80CE03AC3009B1A30 /* MFFilesystem.h in Headers */ = {isa = PBXBuildFile; fileRef = D42E14540CDFCF9000C81814 /* MFFilesystem.h */; };
+		D4E51FE60CE03AC3009B1A30 /* MFMainController.h in Headers */ = {isa = PBXBuildFile; fileRef = D42E13E40CDFC69500C81814 /* MFMainController.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		D4E51FE70CE03AC3009B1A30 /* MFPlugin.h in Headers */ = {isa = PBXBuildFile; fileRef = D42E141B0CDFC99A00C81814 /* MFPlugin.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		D4E51FE80CE03AC3009B1A30 /* MFFilesystem.h in Headers */ = {isa = PBXBuildFile; fileRef = D42E14540CDFCF9000C81814 /* MFFilesystem.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		D4E51FEA0CE03ACA009B1A30 /* MFPlugin.m in Sources */ = {isa = PBXBuildFile; fileRef = D42E141C0CDFC99A00C81814 /* MFPlugin.m */; };
 		D4E51FEB0CE03ACA009B1A30 /* MFFilesystem.m in Sources */ = {isa = PBXBuildFile; fileRef = D42E14550CDFCF9000C81814 /* MFFilesystem.m */; };
-		D4E6CCA20D9202AA0022763F /* MFIconSettingImageView.h in Headers */ = {isa = PBXBuildFile; fileRef = D4E6CCA00D9202AA0022763F /* MFIconSettingImageView.h */; };
+		D4E6CCA20D9202AA0022763F /* MFIconSettingImageView.h in Headers */ = {isa = PBXBuildFile; fileRef = D4E6CCA00D9202AA0022763F /* MFIconSettingImageView.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		D4E6CCA30D9202AA0022763F /* MFIconSettingImageView.m in Sources */ = {isa = PBXBuildFile; fileRef = D4E6CCA10D9202AA0022763F /* MFIconSettingImageView.m */; };
-		D4E6CEFC0D9223770022763F /* IconFamily.h in Headers */ = {isa = PBXBuildFile; fileRef = D4E6CEF80D9223770022763F /* IconFamily.h */; };
+		D4E6CEFC0D9223770022763F /* IconFamily.h in Headers */ = {isa = PBXBuildFile; fileRef = D4E6CEF80D9223770022763F /* IconFamily.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		D4E6CEFD0D9223770022763F /* IconFamily.m in Sources */ = {isa = PBXBuildFile; fileRef = D4E6CEF90D9223770022763F /* IconFamily.m */; };
 		D4E6CEFE0D9223770022763F /* NSString+CarbonFSRefCreation.m in Sources */ = {isa = PBXBuildFile; fileRef = D4E6CEFA0D9223770022763F /* NSString+CarbonFSRefCreation.m */; };
-		D4E6CEFF0D9223770022763F /* NSString+CarbonFSRefCreation.h in Headers */ = {isa = PBXBuildFile; fileRef = D4E6CEFB0D9223770022763F /* NSString+CarbonFSRefCreation.h */; };
-		D4E6CF3E0D9224DB0022763F /* MFAdvancedViewController.h in Headers */ = {isa = PBXBuildFile; fileRef = D4E6CF3C0D9224DB0022763F /* MFAdvancedViewController.h */; };
+		D4E6CEFF0D9223770022763F /* NSString+CarbonFSRefCreation.h in Headers */ = {isa = PBXBuildFile; fileRef = D4E6CEFB0D9223770022763F /* NSString+CarbonFSRefCreation.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		D4E6CF3E0D9224DB0022763F /* MFAdvancedViewController.h in Headers */ = {isa = PBXBuildFile; fileRef = D4E6CF3C0D9224DB0022763F /* MFAdvancedViewController.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		D4E6CF3F0D9224DB0022763F /* MFAdvancedViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = D4E6CF3D0D9224DB0022763F /* MFAdvancedViewController.m */; };
 		D4E6D8130D9372980022763F /* MFCore.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D4FC0C980CF128480029B133 /* MFCore.framework */; };
 		D4E6D8280D9373130022763F /* ftpfs_icon.icns in Resources */ = {isa = PBXBuildFile; fileRef = D4E6D8270D9373130022763F /* ftpfs_icon.icns */; };
@@ -163,7 +168,7 @@
 		D4E6DB120D9392AE0022763F /* ftpfs_askpass.m in Sources */ = {isa = PBXBuildFile; fileRef = D4E6DAF80D9392450022763F /* ftpfs_askpass.m */; };
 		D4E6DB130D9392DE0022763F /* MFCore.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D4FC0C980CF128480029B133 /* MFCore.framework */; };
 		D4E983450D7223CE0058AF73 /* MGNSImage.m in Sources */ = {isa = PBXBuildFile; fileRef = D4E983440D7223CE0058AF73 /* MGNSImage.m */; };
-		D4E983470D7223D70058AF73 /* MGNSImage.h in Headers */ = {isa = PBXBuildFile; fileRef = D4E983460D7223D70058AF73 /* MGNSImage.h */; };
+		D4E983470D7223D70058AF73 /* MGNSImage.h in Headers */ = {isa = PBXBuildFile; fileRef = D4E983460D7223D70058AF73 /* MGNSImage.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		D4EA61570D8B30ED006D8885 /* MFMainController.m in Sources */ = {isa = PBXBuildFile; fileRef = D42E13E50CDFC69500C81814 /* MFMainController.m */; };
 		D4EA61590D8B30ED006D8885 /* macfusionAgent.m in Sources */ = {isa = PBXBuildFile; fileRef = 08FB7796FE84155DC02AAC07 /* macfusionAgent.m */; };
 		D4EA615A0D8B30ED006D8885 /* MFFilesystemController.m in Sources */ = {isa = PBXBuildFile; fileRef = D4B14FC10CE25A88003195A3 /* MFFilesystemController.m */; };
@@ -353,6 +358,7 @@
 /* Begin PBXFileReference section */
 		08FB7796FE84155DC02AAC07 /* macfusionAgent.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = macfusionAgent.m; sourceTree = "<group>"; };
 		08FB779EFE84155DC02AAC07 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = /System/Library/Frameworks/Foundation.framework; sourceTree = "<absolute>"; };
+		416756AE134B7B88008D1673 /* MFServerFSProtocol.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MFServerFSProtocol.h; sourceTree = SOURCE_ROOT; };
 		D40235AD0D7E0176000B9B64 /* Carbon.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Carbon.framework; path = /System/Library/Frameworks/Carbon.framework; sourceTree = "<absolute>"; };
 		D403632D0E0780BF0048BB63 /* MFEditingController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MFEditingController.h; sourceTree = "<group>"; };
 		D403632E0E0780BF0048BB63 /* MFEditingController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MFEditingController.m; sourceTree = "<group>"; };
@@ -750,6 +756,7 @@
 		D4905BAA0D38061F00E21C1E /* Protocols */ = {
 			isa = PBXGroup;
 			children = (
+				416756AE134B7B88008D1673 /* MFServerFSProtocol.h */,
 				D439D5940D09E4390025574A /* MFServerProtocol.h */,
 				D4F499F00D52609400CDA4A9 /* MFFSDelegateProtocol.h */,
 				D4D0E9FE0D7C887A00797279 /* MFClientFSDelegateProtocol.h */,
@@ -1018,12 +1025,19 @@
 			isa = PBXHeadersBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				416756E2134B7CF8008D1673 /* MFServerFS.h in Headers */,
+				416756E3134B7CF8008D1673 /* MFServerPlugin.h in Headers */,
+				416756D4134B7CCE008D1673 /* MFServerFSProtocol.h in Headers */,
+				D439D5950D09E4390025574A /* MFServerProtocol.h in Headers */,
+				416756D5134B7CCE008D1673 /* MFFSDelegateProtocol.h in Headers */,
+				D4D0E9FF0D7C887A00797279 /* MFClientFSDelegateProtocol.h in Headers */,
+				D441DB630D995C2B009F869A /* MFClientProtocol.h in Headers */,
+				416756D6134B7CCE008D1673 /* MFClientDelegateProtocol.h in Headers */,
 				D4E51FE60CE03AC3009B1A30 /* MFMainController.h in Headers */,
 				D4E51FE70CE03AC3009B1A30 /* MFPlugin.h in Headers */,
 				D4E51FE80CE03AC3009B1A30 /* MFFilesystem.h in Headers */,
 				D4B14EE30CE2468B003195A3 /* MFLogging.h in Headers */,
 				D4D6A0D80D025B4A00BC2E2D /* MFConstants.h in Headers */,
-				D439D5950D09E4390025574A /* MFServerProtocol.h in Headers */,
 				D4B657990D0DE41300ED34B3 /* MFClient.h in Headers */,
 				D4CEE0F30D3045590064042E /* MFClientFS.h in Headers */,
 				D4905C330D393F8300E21C1E /* MFClientPlugin.h in Headers */,
@@ -1031,7 +1045,6 @@
 				D403BD6E0D650D630049201D /* MFError.h in Headers */,
 				D4E983470D7223D70058AF73 /* MGNSImage.h in Headers */,
 				D420386F0D73A76B009EE78F /* MFClientRecent.h in Headers */,
-				D4D0E9FF0D7C887A00797279 /* MFClientFSDelegateProtocol.h in Headers */,
 				D413146F0D7F225E00F55B9B /* MGTransitioningTabView.h in Headers */,
 				D4DF353C0D812AA7005C9402 /* MGSmoothingImageView.h in Headers */,
 				D41E173B0D85CAF500F46F50 /* MFSecurity.h in Headers */,
@@ -1047,7 +1060,6 @@
 				D47F67BA0D98496200E91D45 /* MFLogViewerController.h in Headers */,
 				D47F68570D984FF600E91D45 /* MFLogViewerTableView.h in Headers */,
 				D47F688E0D98524B00E91D45 /* MFLogViewerTableCell.h in Headers */,
-				D441DB630D995C2B009F869A /* MFClientProtocol.h in Headers */,
 				D47DF1790DA034AF00C0F934 /* MFClientFSUI.h in Headers */,
 				D403632F0E0780BF0048BB63 /* MFEditingController.h in Headers */,
 			);
@@ -1228,6 +1240,8 @@
 /* Begin PBXProject section */
 		08FB7793FE84155DC02AAC07 /* Project object */ = {
 			isa = PBXProject;
+			attributes = {
+			};
 			buildConfigurationList = 1DEB927808733DD40010E9CD /* Build configuration list for PBXProject "MacFusion2" */;
 			compatibilityVersion = "Xcode 3.0";
 			developmentRegion = English;
@@ -1580,13 +1594,13 @@
 		1DEB927A08733DD40010E9CD /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
-				ARCHS = "$(ARCHS_STANDARD_32_64_BIT_PRE_XCODE_3_1)";
-				ARCHS_STANDARD_32_64_BIT_PRE_XCODE_3_1 = "x86_64 i386 ppc";
+				ARCHS = "$(ARCHS_STANDARD_32_64_BIT)";
 				GCC_VERSION = com.apple.compilers.llvm.clang.1_0;
 				GCC_WARN_ABOUT_RETURN_TYPE = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
+				MACOSX_DEPLOYMENT_TARGET = 10.5;
 				PREBINDING = NO;
-				SDKROOT = "";
+				SDKROOT = macosx10.8;
 			};
 			name = Release;
 		};
@@ -1594,8 +1608,6 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ALWAYS_SEARCH_USER_PATHS = NO;
-				ARCHS = "$(ARCHS_STANDARD_32_BIT_PRE_XCODE_3_1)";
-				ARCHS_STANDARD_32_BIT_PRE_XCODE_3_1 = "ppc i386";
 				COPY_PHASE_STRIP = YES;
 				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
 				GCC_ENABLE_FIX_AND_CONTINUE = NO;
@@ -1694,14 +1706,13 @@
 		D45B70EA0E1B3DFF0036043E /* Release-Signed */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
-				ARCHS = "$(ARCHS_STANDARD_32_64_BIT_PRE_XCODE_3_1)";
-				ARCHS_STANDARD_32_64_BIT_PRE_XCODE_3_1 = "x86_64 i386 ppc";
+				ARCHS = "$(ARCHS_STANDARD_32_64_BIT)";
 				GCC_VERSION = com.apple.compilers.llvm.clang.1_0;
 				GCC_WARN_ABOUT_RETURN_TYPE = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				ONLY_ACTIVE_ARCH = NO;
+				MACOSX_DEPLOYMENT_TARGET = 10.5;
 				PREBINDING = NO;
-				SDKROOT = "";
+				SDKROOT = macosx10.8;
 			};
 			name = "Release-Signed";
 		};
@@ -1737,8 +1748,6 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ALWAYS_SEARCH_USER_PATHS = NO;
-				ARCHS = "$(ARCHS_STANDARD_32_BIT_PRE_XCODE_3_1)";
-				ARCHS_STANDARD_32_BIT_PRE_XCODE_3_1 = "ppc i386";
 				COPY_PHASE_STRIP = YES;
 				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
 				GCC_ENABLE_FIX_AND_CONTINUE = NO;
@@ -1818,8 +1827,6 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ALWAYS_SEARCH_USER_PATHS = NO;
-				ARCHS = "$(ARCHS_STANDARD_32_BIT_PRE_XCODE_3_1)";
-				ARCHS_STANDARD_32_BIT_PRE_XCODE_3_1 = "ppc i386";
 				COPY_PHASE_STRIP = YES;
 				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
 				GCC_ENABLE_FIX_AND_CONTINUE = NO;
@@ -1971,13 +1978,13 @@
 		D45B70F60E1B3E050036043E /* Debug-Signed */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
-				ARCHS = "$(ONLY_ACTIVE_ARCH_PRE_XCODE_3_1)";
+				ARCHS = "$(ARCHS_STANDARD_32_64_BIT)";
 				GCC_VERSION = com.apple.compilers.llvm.clang.1_0;
 				GCC_WARN_ABOUT_RETURN_TYPE = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				ONLY_ACTIVE_ARCH_PRE_XCODE_3_1 = "$(NATIVE_ARCH_ACTUAL)";
+				MACOSX_DEPLOYMENT_TARGET = 10.5;
 				PREBINDING = NO;
-				SDKROOT = "";
+				SDKROOT = macosx10.8;
 			};
 			name = "Debug-Signed";
 		};
@@ -2013,8 +2020,6 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ALWAYS_SEARCH_USER_PATHS = NO;
-				ARCHS = "$(ARCHS_STANDARD_32_BIT_PRE_XCODE_3_1)";
-				ARCHS_STANDARD_32_BIT_PRE_XCODE_3_1 = "ppc i386";
 				COPY_PHASE_STRIP = YES;
 				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
 				GCC_ENABLE_FIX_AND_CONTINUE = NO;
@@ -2094,8 +2099,6 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ALWAYS_SEARCH_USER_PATHS = NO;
-				ARCHS = "$(ARCHS_STANDARD_32_BIT_PRE_XCODE_3_1)";
-				ARCHS_STANDARD_32_BIT_PRE_XCODE_3_1 = "ppc i386";
 				COPY_PHASE_STRIP = YES;
 				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
 				GCC_ENABLE_FIX_AND_CONTINUE = NO;
@@ -2466,8 +2469,6 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ALWAYS_SEARCH_USER_PATHS = NO;
-				ARCHS = "$(ARCHS_STANDARD_32_BIT_PRE_XCODE_3_1)";
-				ARCHS_STANDARD_32_BIT_PRE_XCODE_3_1 = "ppc i386";
 				COPY_PHASE_STRIP = YES;
 				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
 				GCC_ENABLE_FIX_AND_CONTINUE = NO;
@@ -2493,7 +2494,6 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ALWAYS_SEARCH_USER_PATHS = NO;
-				ARCHS = "$(NATIVE_ARCH)";
 				COPY_PHASE_STRIP = NO;
 				GCC_DYNAMIC_NO_PIC = NO;
 				GCC_ENABLE_FIX_AND_CONTINUE = YES;
@@ -2581,13 +2581,13 @@
 		D4FC0DC60CF23DE30029B133 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
-				ARCHS = "$(ONLY_ACTIVE_ARCH_PRE_XCODE_3_1)";
+				ARCHS = "$(ARCHS_STANDARD_32_64_BIT)";
 				GCC_VERSION = com.apple.compilers.llvm.clang.1_0;
 				GCC_WARN_ABOUT_RETURN_TYPE = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				ONLY_ACTIVE_ARCH_PRE_XCODE_3_1 = "$(NATIVE_ARCH_ACTUAL)";
+				MACOSX_DEPLOYMENT_TARGET = 10.5;
 				PREBINDING = NO;
-				SDKROOT = "";
+				SDKROOT = macosx10.8;
 			};
 			name = Debug;
 		};
