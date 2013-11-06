@@ -366,14 +366,19 @@
 
 
 - (void)deleteConfirmationAlertDidEnd:(NSAlert*)alert returnCode:(NSInteger)code contextInfo:(void *)context {
-	NSArray *filesystemsToDelete = (NSArray *)context;
-	if (code == NSAlertSecondButtonReturn) {
-		
-	} else if (code == NSAlertFirstButtonReturn) {
-		for(MFClientFS *fs in filesystemsToDelete) {
-			[client deleteFilesystem: fs];	
+	NSArray *filesystems = [self selectedFilesystems];
+	NSMutableArray *filesystemsToDelete = [filesystems mutableCopy];
+	for(MFClientFS *fs in filesystems) {
+		if(!([fs isUnmounted] || [fs isFailedToMount])) {
+			[filesystemsToDelete removeObject: fs];
 		}
 	}
+	if (code == NSAlertDefaultReturn || code == NSAlertFirstButtonReturn) {
+		for(MFClientFS *fs in filesystemsToDelete) {
+			[client deleteFilesystem: fs];
+		}
+	}
+	[filesystemsToDelete release];
 }
 
 
