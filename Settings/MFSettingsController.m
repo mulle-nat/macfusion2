@@ -378,7 +378,6 @@
 			[client deleteFilesystem: fs];
 		}
 	}
-	[filesystemsToDelete release];
 }
 
 
