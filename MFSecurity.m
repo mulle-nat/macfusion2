@@ -25,6 +25,7 @@
 #import "MFClientPlugin.h"
 #import "MFNetworkFS.h"
 #import "MFCore.h"
+#import <Foundation/NSDebug.h>
 
 #define self @"MFSECURITY"
 
@@ -57,7 +58,8 @@ NSDictionary *getGenericSecretsForFilesystemAndReturnItem(MFFilesystem *fs, SecK
 		if ([loadedDataDict isKindOfClass:[NSDictionary class]]) {
 			// MFLogS(self, @"Succesfully loaded secrets dictionary from keychain %@", loadedDataDict);
 			SecKeychainItemFreeContent(NULL, passwordData);
-               NSLog( @"Service: %@, Account: %@ -> %@", serviceName, [fs uuid], loadedDataDict);
+                if( NSDebugEnabled)
+                   NSLog( @"Service: %@, Account: %@ -> %@", serviceName, [fs uuid], loadedDataDict);
 			return loadedDataDict;
 		} else {
 			// MFLogS(self, @"Failed to parse data in generic entry. data: %@", loadedDataDict);
