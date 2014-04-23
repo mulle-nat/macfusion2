@@ -1326,7 +1326,7 @@ enum {
 	
 	if (((samplesPerPixel == 3) && (bitsPerPixel == 24)) || ((samplesPerPixel == 4) && (bitsPerPixel == 32)))
 	{
-		CGDirectPaletteRef cgPal;
+		void *cgPal;
 		CGDeviceColor cgCol;
 
 		rawDataSize = pixelsWide * pixelsHigh;
